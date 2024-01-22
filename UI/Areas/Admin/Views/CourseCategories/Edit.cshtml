@@ -1,0 +1,25 @@
+﻿@model CourseCategory
+
+@{
+    ViewData["Title"] = "Güncelle";
+}
+
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item"><a asp-action="Index">Kurs Kategori Listesi</a></li>
+    <li class="breadcrumb-item active"><a>Kurs Kategori Güncelle</a></li>
+</ol>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div class="form-group">
+                <label asp-for="Name" class="control-label">Kurs Kategori Adı</label>
+                <input asp-for="Name" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Kaydet" class="btn btn-outline-primary" />
+            </div>
+        </form>
+    </div>
+</div>
